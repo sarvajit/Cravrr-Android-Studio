@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/header" />
+
+        <TextView
+            android:id="@+id/textMassage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel"
+            android:layout_margin="10dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/dotted_background"
+            android:gravity="center|center_vertical"
+            android:padding="20dp"
+            android:text="Please check your text message for the Verification Code."
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/txtVerificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textMassage"
+            android:layout_marginTop="10dp"
+            android:background="@color/edittext_background"
+            android:ems="10"
+            android:gravity="center|center_vertical"
+            android:hint="ENTER VERIFICATION CODE"
+            android:inputType="textEmailAddress"
+            android:maxLength="4"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/address_text_color"
+            android:textColorHint="@color/address_text_color"
+            android:textSize="15sp" />
+        
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/smoothProgressbarOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    app:spb_color="#FF0000"
+                    app:spb_mirror_mode="false"
+                    app:spb_progressiveStart_activated="true"
+                    app:spb_progressiveStart_speed="1.5"
+                    app:spb_progressiveStop_speed="3.4"
+                    app:spb_reversed="false"
+                    app:spb_sections_count="4"
+                    app:spb_speed="2.0"
+                    app:spb_stroke_separator_length="4dp"
+                    app:spb_stroke_width="4dp"
+                    android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_submit_button"
+            android:minHeight="0dp"
+            android:padding="5dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textResenOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/ResenOTP"
+            android:textColor="@color/hotel_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

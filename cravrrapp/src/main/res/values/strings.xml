@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    
+    <!-- Chage here app name -->
+          <!-- <string name="app_name" translatable="false">MITHAAS</string>   -->
+  
+      
+     <!--  <string name="app_name" translatable="false">CANTEEN DESHI DHABA</string> 
+   -->
+     
+      <!--  <string name="app_name" translatable="false">BAWARCHI</string>   -->
+      <!-- <string name="app_name" translatable="false">MASALA INDIAN EXPRESS</string> -->
+      
+    <!--          
+      <string name="app_name" translatable="false">CHASKA</string> -->
+      
+      
+     <!--  <string name="getTncURL" translatable="false">http://www.cravrr.com</string> -->
+         <string name="app_name" translatable="false">CHINA SPICE</string>    
+ 
+  <!-- for chaska 1697635057116504-->
+ 
+  <!--  <string name="facebook_app_id">975732789177623</string> -->
+     
+  <!-- for mithaaa 1697635057116504-->
+  <!-- <string name="facebook_app_id">1697635057116504</string> -->
+  
+  <!--for china spice  -->
+   <string name="facebook_app_id">1645506785712579</string>
+
+    <!-- permissions Strings-->
+    <string name="accesscoarselocation">Allows an app to access approximate location.</string>
+    <string name="readphonestate">Allow to access READ_PHONE_STATE permission to allow read
+        only access to phone state.</string>
+    <string name="accessnetworkstate">Allow to access ACCESS_NETWORK_STATE permission to get
+        information about networks </string>
+    <string name="internet">Allow to access INTERNET permission to open network sockets.</string>
+    <string name="accessfinelocation">Allows an app to access precise location.</string>
+
+
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="hello_world" translatable="false">Hello world</string>
+    <string name="server_register_error" translatable="false">Server Register Error</string>
+    <string name="server_unregister_error" translatable="false">Server Unregister Error</string>
+    <string name="server_unregistered" translatable="false">Server is Unregistered</string>
+    <string name="server_registered" translatable="false">Server Registered</string>
+    <string name="gcm_unregistered" translatable="false">GCM Unregisterd</string>
+    <string name="gcm_deleted" translatable="false">GCM deleted</string>
+    <string name="gcm_error" translatable="false">GCM error</string>
+    <string name="gcm_recoverable_error" translatable="false">GCM Recoverable error</string>
+    <string name="search_restaurant" translatable="false">Search Restaurants</string>
+    <string name="textforTnc" translatable="false"><u>I have read and agree to the Cravrr terms and conditions.</u></string>
+    
+    <string name="searchlogin" translatable="false">Please Enter Your Mobile Number</string>
+    <string name="enteryourcity" translatable="false">Enter Your City</string>
+    <string name="enterzip" translatable="false">Enter Zip</string>
+    <string name="or" translatable="false">Or</string>
+    <string name="skip"><u>SKIP</u></string>
+    <string name="ForgotPass"><u>Forgot Password ?</u></string>
+    <string name="SignUp"><u><b>SIGN UP </b></u></string>
+     <string name="ResenOTP"><u><b>Resend verification code.</b></u></string>
+    <string name="SignUp_India"><u><b>New User ? - Please Register</b></u></string>
+    <!-- <string name="base_url">http://b2c.cravrr.com/</string>
+ -->
+</resources>

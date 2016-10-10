@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/hotel_blue" >
+
+    <TextView
+        android:id="@+id/txtHistoryDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:text=""
+      
+        android:textColor="#63b3ba"
+         />
+
+    <TextView
+        android:id="@+id/txtHistoryTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textColor="#FFF"
+        android:text="" 
+         android:gravity="right"
+        android:layout_marginRight="5dp"/>
+
+</LinearLayout>

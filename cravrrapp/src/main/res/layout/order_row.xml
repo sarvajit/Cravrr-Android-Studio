@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:background="#f4d6cf"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageButton
+            android:id="@+id/btnOrderMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_red_minus" />
+
+        <TextView
+            android:id="@+id/txtOrderQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_org"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/address_text_color" />
+
+        <ImageView
+            android:id="@+id/imageIngredient"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_sub_menu"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnOrderPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_red_plus" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtOrderName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:text=""
+        android:textColor="@color/address_text_color" />
+
+    <TextView
+        android:id="@+id/txtOrderPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/gray_text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtOrderTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:paddingLeft="0dp"
+        android:paddingRight="3dp"
+        android:text=""
+        android:textColor="@color/orange" />
+
+    <ImageButton
+        android:id="@+id/btnOrderRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_remove_cart" />
+
+</LinearLayout>

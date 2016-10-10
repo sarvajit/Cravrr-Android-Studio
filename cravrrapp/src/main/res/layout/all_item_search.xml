@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:background="#FFF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/txt_searchAllitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_field"
+        
+        android:layout_below="@+id/lableLayout"
+        android:layout_weight="0.79"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_search"
+        android:hint="search"
+        android:gravity="left"
+        android:imeActionLabel="Search"
+        android:singleLine="true" 
+        
+        android:textColor="@color/hotel_blue"
+        android:textSize="17sp"/> 
+
+    <Button
+        android:id="@+id/cancel_Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Cancel" />
+
+</LinearLayout>

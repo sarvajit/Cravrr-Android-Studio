@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title_background">#ffBB0C75</color>
+    <color name="title_text">#ffffffff</color>
+    <color name="back_ground">#828282</color>
+    
+    <color name="title_text_alt">#ff000000</color>
+    <color name="foreground1">#ff355689</color>
+    <color name="foreground2">#ff7081a3</color>
+    <color name="textbox">#ccc</color>
+    <color name="background2">#ffd5ddeb</color>
+    <color name="background3">#ffe3e8f1</color>
+    <color name="title_separator">#40ffffff</color>
+    <color name="main_bg">#ECECEE</color>
+    <color name="green_text">#84B913</color>
+    <color name="gray_text">#A2A2A2</color>
+    <color name="yellow">#FFD801</color>
+    <color name="orange">#EA6733</color>
+    <color name="address_text_color">#c42f12</color>
+    <color name="hotel_blue">#00435a</color>
+    
+    <color name="ingredient_clor">#dedede</color>
+    <color name="filter">#94dfe6</color>
+    <color name="jetblack">#0a0a0a</color>
+
+    <!-- New Code -->
+    <color name="checked_button_background">#c63010</color>
+    <color name="unchecked_button_background">#e6e6e6</color>
+    <color name="unchecked_button_textcolor">#bebebe</color>
+    <color name="textview_bg">#f7e9e6</color>
+    <color name="textview_border">#e6aa9e</color>
+    <color name="edittext_background">#f0f0f0</color>
+    <color name="emptycart_background">#e5e5e5</color>
+    
+    <color name="hotel_name">#00435a</color>
+
+</resources>

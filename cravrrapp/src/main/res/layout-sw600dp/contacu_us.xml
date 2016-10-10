@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/hotel_blue"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/conatctbuttonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_food_prev_new" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/buttonBack"
+                android:background="#51908d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="CONTACT US"
+                android:textColor="#63b3ba"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+      <LinearLayout
+            android:id="@+id/detailofcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5dp" >
+        <LinearLayout
+            android:id="@+id/titlelofcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="5dp" >    
+          
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="For order and reservation please contact us at"
+                android:textColor="@color/hotel_name"
+                android:textSize="20sp" />
+         
+         
+          
+        </LinearLayout>
+          
+        
+        
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/addresslofcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Address:"
+                
+                android:textColor="@color/hotel_blue"
+                android:textSize="15sp" />
+         
+          <TextView
+              android:id="@+id/txtContactHotelName"
+              android:layout_width="194dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.42"
+              android:text="826, Newark Avenue, Jersey City,New Jercy,07306,USA"
+              android:textColor="@color/hotel_blue"
+              android:textSize="15sp" />
+
+          </LinearLayout>
+          <LinearLayout
+            android:id="@+id/phonelofcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Phone:"
+                
+                android:textColor="@color/hotel_blue"
+                android:textSize="15sp" />
+         
+          <TextView
+              android:id="@+id/textcall"
+              android:layout_width="194dp"
+              android:layout_height="wrap_content"
+              
+              android:layout_weight="0.42"
+              android:text=" (201) 653 9292"
+              android:textColor="@color/hotel_name"
+              android:textSize="15sp" />
+
+          </LinearLayout>
+        </LinearLayout>  
+      </LinearLayout>
+    
+
+    
+
+</android.support.v4.widget.DrawerLayout>

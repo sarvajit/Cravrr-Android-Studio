@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.retaurants.chinaspice.MyTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:chinaspice="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/ingredient_clor"
+    android:textColor="@color/orange"
+    android:paddingLeft="5dp"
+    android:gravity="center_vertical"
+    android:textSize="20sp"
+    chinaspice:fontName="Gotham-Rounded-Light_21020.ttf"
+    
+     />
+

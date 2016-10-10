@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- New Code Start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/rgPaymentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rdDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_background"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:text="DELIVERY"
+                android:textColor="@drawable/radio_text" />
+           
+            <!-- added special remark -->
+            
+            
+            
+            
+            
+            
+            <!-- android:button="@drawable/radiobutton_checkbox" -->
+
+            <RadioButton
+                android:id="@+id/rdPickup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_background"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:text="PICK UP"
+                android:textColor="@drawable/radio_text" />
+
+            <RadioButton
+                android:id="@+id/rdPreOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_background"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:text="Cash on Delivery"
+                android:textColor="@drawable/radio_text"
+                android:visibility="gone" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="SUB TOTAL "
+            android:textColor="@color/address_text_color" />
+
+        <TextView
+            android:id="@+id/txtSubTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/roundedcorner"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="13sp"
+            android:text="$ 00.00"
+            android:paddingLeft="3dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/address_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnRedeemNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_btn_apply_coupon" />
+
+        <TextView
+            android:id="@+id/textCoupneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="SUMMER2014"
+            android:textColor="@color/address_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="-$8.00"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="DISCOUNT"
+            android:textColor="@color/address_text_color" />
+
+        <TextView
+            android:id="@+id/txtDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/roundedcorner"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textSize="13sp"
+            android:paddingLeft="3dp"
+            android:paddingRight="0dp"
+            android:text="$00.00"
+            android:textColor="@color/address_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/txtDeliveryFeeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="DELIVERY CHARGE "
+            android:textColor="@color/address_text_color" />
+
+        <TextView
+            android:id="@+id/txtDeliveryFee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/roundedcorner"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/address_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" 
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="SERVICE TAX "
+            android:textColor="@color/address_text_color" />
+
+        <TextView
+            android:id="@+id/txtTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/roundedcorner"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="0dp"
+            android:textSize="13sp"
+            android:textColor="@color/address_text_color" />
+    </LinearLayout>
+    
+    
+
+    <LinearLayout
+        android:id="@+id/layoutTaxesSlab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:padding="5dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/textTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="TIP ( % ) "
+            android:textColor="@color/address_text_color" />
+
+        <SeekBar
+            android:id="@+id/seekBarTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            
+            android:max="100"
+            android:thumb="@drawable/ic_seek_thumb" />
+
+        <TextView
+            android:id="@+id/txtTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/roundedcorner"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="0dp"
+            android:textSize="13sp"
+            android:text="00.00"
+            android:textColor="@color/address_text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/roundedcorner"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp"
+            android:paddingRight="0dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textTipSymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="RS"
+                android:textColor="@color/address_text_color" />
+
+            <TextView
+                android:id="@+id/txtTip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="left"
+                android:inputType="number"
+                android:padding="5dp"
+                android:text="00.00"
+                android:textColor="@color/address_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarTip2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="100"
+        android:thumb="@drawable/ic_seek_thumb"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/dotted_background"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btnRedeemNow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_btn_apply_coupon" />
+
+            <TextView
+                android:id="@+id/textCoupneNo1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/roundedcorner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="SUMMER2014"
+                android:textColor="@color/address_text_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-$8.00"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/buttonCoupneBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_coupon_bank" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/address_text_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="TOTAL"
+            android:textColor="@color/address_text_color" />
+        
+        
+        
+        
+
+        <TextView
+            android:id="@+id/txtTotalTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/roundedcorner"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingLeft="3dp"
+            android:textSize="13sp"
+            android:paddingRight="0dp"
+            android:textColor="@color/address_text_color" />
+    </LinearLayout>
+    
+    <LinearLayout
+                    android:id="@+id/layoutExtra"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                     <TextView
+                        android:id="@+id/txtSpecial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:text="Special Remark:"
+                        android:textColor="@color/address_text_color"
+                         />
+
+                    <EditText
+                        android:id="@+id/editspecialRemark"
+                        android:layout_width="184dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.87"
+                        android:background="@drawable/roundedcorner"
+                        android:gravity="center|left"
+                        android:hint="Enter Special Remark"
+                        android:imeOptions="actionDone"
+                        android:inputType="textMultiLine"
+                        android:lines="2"
+                        android:maxLength="50"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/address_text_color"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+    
+
+    <CheckBox
+        android:id="@+id/checkCOD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/ingredien_checkbox"
+        android:padding="10dp"
+        android:text="Pay Cash on Delivery."
+        android:textColor="@color/address_text_color"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_placeorder_button"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/layoutSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Please SIGN IN to Place your Order"
+            android:textColor="@color/hotel_blue"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_signin_button" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:gravity="right"
+                android:text="New User ? "
+                android:textColor="@color/hotel_blue"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/SignUp"
+                android:textColor="@color/hotel_blue"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- New Code End -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="PAYMENT INFO"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rdUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:button="@drawable/ingredien_checkbox"
+                android:checked="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="0dp"
+                android:text="Login" />
+
+            <RadioButton
+                android:id="@+id/rdSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ingredien_checkbox"
+                android:paddingLeft="5dp"
+                android:paddingRight="0dp"
+                android:text="SignUp" />
+        </RadioGroup>
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/textView1" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="PAYMENT INFO" -->
+        <!-- android:textSize="15sp" -->
+        <!-- android:textColor="@color/jetblack" -->
+        <!-- android:textStyle="bold" -->
+        <!-- android:layout_marginBottom="10dp" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/imageView1" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/red_arrow" /> -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/red_line" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/ingredient_clor"
+        android:ems="10"
+        android:hint="USERNAME / MOBILE"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:textColor="@color/jetblack"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/ingredient_clor"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:textColor="@color/jetblack"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/txtCardName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/ingredient_clor"
+        android:ems="10"
+        android:hint="CARD HOLDER NAME"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:textColor="@color/jetblack"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/txtCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/ingredient_clor"
+        android:ems="10"
+        android:hint="CARD NUMBER"
+        android:inputType="numberPassword"
+        android:maxLength="20"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:textColor="@color/jetblack"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/txtExpireMonth"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="MONTH"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtExpireYear"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="YEAR"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtCVV"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/ingredient_clor"
+        android:ems="10"
+        android:hint="CVV"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:textColor="@color/jetblack"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layoutRedeem2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnHideShow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:minHeight="5dp"
+            android:minWidth="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Delivery Address +"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDetailHideShow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/txtAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="ADDRESS"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtStreetName2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="STREET"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtApartmentName2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="APPARTMENT NO."
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtCity2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="CITY"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtState2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="STATE"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtCountry2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="COUNTRY"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtZIPCode2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="ZIP CODE"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtEmail2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:button="@drawable/ingredien_checkbox"
+        android:gravity="center_vertical"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="Same As Customer Address"
+        android:textColor="@color/orange"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layoutRedeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnHideShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:minHeight="5dp"
+            android:minWidth="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Customer Address +"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDetailHideShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/txtFirstname"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/ingredient_clor"
+                android:ems="10"
+                android:hint="FIRST NAME"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="0dp"
+                android:textColor="@color/jetblack" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/txtLastname"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/ingredient_clor"
+                android:ems="10"
+                android:hint="LAST NAME"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="0dp"
+                android:textColor="@color/jetblack" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="ADDRESS"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtStreetName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="STREET"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtApartmentName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="APPARTMENT NO."
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtCity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="CITY"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtState"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="STATE"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtCountry"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="COUNTRY"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtZIPCode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="ZIP CODE"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <EditText
+            android:id="@+id/txtBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ingredient_clor"
+            android:ems="10"
+            android:hint="DATE OF BIRTH"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/jetblack" />
+
+        <Spinner
+            android:id="@+id/spOrderType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
